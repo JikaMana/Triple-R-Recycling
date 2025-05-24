@@ -10,6 +10,20 @@ const ContactPage = () => {
     <>
       <Helmet>
         <title>Contact Us - TripleR</title>
+        <meta
+          name="description"
+          content="Get in touch with Triple R Recycling for sustainable waste solutions. We'd love to hear from you."
+        />
+        <meta
+          name="keywords"
+          content="Triple R, contact, recycling, waste management, sustainability"
+        />
+        <meta property="og:title" content="Contact Triple R Recycling" />
+        <meta
+          property="og:description"
+          content="Connect with Triple R Recycling to support sustainability and eco-friendly solutions."
+        />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="max-w-[1280px] mx-auto p-6 sm:p-10">
         <div className="mt-24">
