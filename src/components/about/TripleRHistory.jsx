@@ -22,12 +22,12 @@ const TripleRHistory = () => {
           </div>
 
           <div className="bg-green-800 text-gray-200 rounded-2xl p-6 text-center w-full">
-            <h4 className="text-2xl font-bold">...</h4>
-            <p className="text-sm mt-1">__________</p>
+            <h4 className="text-3xl font-bold">Abuja</h4>
+            <p className="text-xl mt-1 font-medium">Location</p>
           </div>
         </div>
       </div>
-      <div className="px-12">
+      <div className="md:px-12">
         <h2 className="text-3xl md:text-3xl mb-4 font-bold text-gray-900 leading-tight">
           Our Story
         </h2>

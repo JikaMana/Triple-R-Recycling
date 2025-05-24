@@ -7,6 +7,7 @@ import {
   Video,
 } from "lucide-react";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -34,35 +35,35 @@ const Footer = () => {
               <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="/" className="hover:text-green-800 transition">
+                  <Link to="/" className="hover:text-green-800 transition">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/about" className="hover:text-green-800 transition">
+                  <Link to="/about" className="hover:text-green-800 transition">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/services"
+                  <Link
+                    to="/service"
                     className="hover:text-green-800 transition"
                   >
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/contact"
                     className="hover:text-green-800 transition"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/blog" className="hover:text-green-800 transition">
+                  <Link to="/blog" className="hover:text-green-800 transition">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -70,45 +71,45 @@ const Footer = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-4">Our Socials</h3>
                 <div className="flex space-x-4 mb-8">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61571117470897&mibextid=ZbWKwL"
+                  <Link
+                    to="https://www.facebook.com/profile.php?id=61571117470897&mibextid=ZbWKwL"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook"
                     className="hover:text-green-800 transition"
                   >
                     <Facebook size={28} />
-                  </a>
-                  <a
-                    href="https://www.instagram.com/triplerrecyclinglimited?igsh=eHE0aDRpeXI3YTJ2"
+                  </Link>
+                  <Link
+                    to="https://www.instagram.com/triplerrecyclinglimited?igsh=eHE0aDRpeXI3YTJ2"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
                     className="hover:text-green-800 transition"
                   >
                     <Instagram size={28} />
-                  </a>
-                  <a
-                    href="https://x.com/"
+                  </Link>
+                  <Link
+                    to="https://x.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Twitter (X)"
                     className="hover:text-green-800 transition"
                   >
                     <Twitter size={28} />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/company/triple-r-recycling-limited/"
+                  </Link>
+                  <Link
+                    to="https://www.linkedin.com/company/triple-r-recycling-limited/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
                     className="hover:text-green-800 transition"
                   >
                     <Linkedin size={28} />
-                  </a>
+                  </Link>
 
-                  <a
-                    href="https://www.tiktok.com/@triple.r.recyling?_t=ZM-8tQ8GUFLsuL&_r=1"
+                  <Link
+                    to="https://www.tiktok.com/@triple.r.recyling?_t=ZM-8tQ8GUFLsuL&_r=1"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="TikTok"
@@ -122,14 +123,14 @@ const Footer = () => {
                     >
                       <path d="M16.5 1.5h-3v13.25a2.75 2.75 0 1 1-2.75-2.75V8.5a6.5 6.5 0 1 0 6.5 6.5V8.129a7.285 7.285 0 0 0 3.75 1.121V6.25a4.75 4.75 0 0 1-4.75-4.75Z" />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
               <div className="flex gap-x-2">
                 <h3 className="text-xl font-semibold mb-1">Mail Directly</h3>
-                <a href="mailto:triplerrecycling7@gmail.com">
+                <Link to="mailto:triplerrecycling7@gmail.com">
                   <Mail />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -139,21 +140,12 @@ const Footer = () => {
           © {new Date().getFullYear()} TRIPLE R LIMITED. All rights reserved.
           <div className="text-gray-400 text-xs">
             Built by{" "}
-            <a
-              href="https://github.com/yahayaabdullahimana"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:text-green-800 transition"
+            <Link
+              to="mailto:yahayaabdullahimana@gmail.com"
+              className="underline transition"
             >
               Yahaya Abdullahi Mana
-            </a>{" "}
-            —{" "}
-            <a
-              href="mailto:yahayaabdullahimana@gmail.com"
-              className="underline  transition"
-            >
-              Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>

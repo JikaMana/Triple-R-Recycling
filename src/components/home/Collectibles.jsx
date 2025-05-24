@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import {
   Wine,
   Beer,
@@ -61,16 +63,16 @@ export default function Collectibles() {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 md:mb-12 text-gray-800">
           ♻️ Collectibles for a Sustainable Future
         </h2>
-        <div className="grid grid-cols-1 min-[400px]:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-8">
           {items.map((item, index) => (
             <div
               key={index}
               className="flex flex-col items-center p-6 bg-white rounded-3xl cursor-pointer shadow-md hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
-              <div className=" p-4 rounded-full mb-4 max-h-52 h-full grid place-items-center">
+              <div className="p-4 rounded-full mb-4 max-h-52 h-full grid place-items-center">
                 <img src={item.icon} alt={item.title} />
               </div>
-              <h3 className="text-center text-lg font-semibold text-gray-700 whitespace-nowrap">
+              <h3 className="text-center text-lg font-semibold text-gray-700 sm:whitespace-nowrap">
                 {item.title}
               </h3>
             </div>

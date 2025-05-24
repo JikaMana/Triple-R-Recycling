@@ -1,4 +1,3 @@
-import { MapPin } from "lucide-react";
 import React from "react";
 import { Helmet } from "react-helmet-async";
 
@@ -74,7 +73,7 @@ const ContactPage = () => {
             {/* Google Map */}
             <div className="w-full lg:w-1/2 h-[400px] lg:h-auto">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31576.467017728195!2d7.211187438284705!3d8.886503833240898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e65c07945befd%3A0x46a4ce0766a5f8a9!2sKuje%20900105%2C%20Federal%20Capital%20Territory!5e1!3m2!1sen!2sng!4v1745568882729!5m2!1sen!2sng"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d99075.9823387323!2d7.070057589903625!3d8.926152380300532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e6300331d0193%3A0x4eb436cfbf6334be!2sTriple%20R%20Recycling%20Limited%200!5e1!3m2!1sen!2sng!4v1746615756824!5m2!1sen!2sng"
                 className="w-full h-full"
                 style={{ border: 0 }}
                 allowFullScreen=""

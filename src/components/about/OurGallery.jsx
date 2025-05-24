@@ -6,13 +6,12 @@ import Workers3 from "../../assets/images/about/tripleR-workers3.jpeg";
 import Workers4 from "../../assets/images/about/tripleR-workers4.jpeg";
 import Workers5 from "../../assets/images/about/tripleR-workers5.jpeg";
 import WorkersInAction from "../../assets/images/about/WorkersInAction.jpeg";
-import WorkersInActionVdeo from "../../assets/images/about/WorkersInActionVideo.mp4";
 
 const OurGallery = () => {
   return (
     <div className="px-6 py-12 max-w-7xl mx-auto">
       <h2 className="text-3xl lg:text-4xl font-bold text-center text-green-800">
-        Our Team in Action
+        Meet TripleR Team
       </h2>
       <ul>
         <li>
@@ -41,14 +40,14 @@ const OurGallery = () => {
         {/* Portrait Images */}
         <div className="aspect-[4/4]">
           <img
-            src={Workers2}
+            src={Workers3}
             alt="TripleR Workers"
             className="w-full h-full object-cover rounded-xl"
           />
         </div>
-        <div className="aspect-[4/4]">
+        <div className="md:col-span-2 aspect-[4/4] md:aspect-[10/5]">
           <img
-            src={Workers3}
+            src={Workers2}
             alt="TripleR Workers"
             className="w-full h-full object-cover rounded-xl"
           />
@@ -57,7 +56,7 @@ const OurGallery = () => {
           <img
             src={Workers4}
             alt="TripleR Workers"
-            className="w-full h-full object-cover rounded-xl"
+            className="w-full h-full object-cover rounded-xl "
           />
         </div>{" "}
         <div className="aspect-[4/4]">
@@ -74,7 +73,7 @@ const OurGallery = () => {
             className="w-full h-full object-cover rounded-xl"
           />
         </div>{" "}
-        <div className="aspect-[4/4]">
+        {/* <div className="aspect-[4/4]">
           <video
             src={WorkersInActionVdeo}
             muted
@@ -83,7 +82,7 @@ const OurGallery = () => {
             playsInline
             className="w-full h-full object-cover rounded-xl"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

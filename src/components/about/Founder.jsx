@@ -115,6 +115,23 @@ const Founder = () => {
           </div>
         </div>
       </div>
+      <div className="max-w-4xl mx-auto px-4">
+        <h2 className="text-green-800 text-2xl font-medium text-center my-4">
+          Wealth from Waste: Unlocking Opportunities in Recycling and the
+          Circular Economy
+        </h2>
+        <div className="aspect-video rounded-xl overflow-hidden shadow-lg ">
+          <iframe
+            src="https://www.youtube.com/embed/_Rry9RWGE0c?si=LkeRq2sBhRB-sctE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            className="w-full h-full"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 };

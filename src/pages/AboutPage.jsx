@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 
 const AboutPage = () => {
   const contactIconsClasses =
-    "transition bg-green-800 text-gray-200 p-2 rounded-full";
+    "transition bg-green-800 text-gray-200 p-2 rounded-full w-[44px] h-[44px]";
   return (
     <>
       <Helmet>
@@ -33,7 +33,7 @@ const AboutPage = () => {
               wasted and everything has value.
             </p>
 
-            <div className="flex space-x-4 text-gray-500">
+            <div className="flex flex-wrap justify-center space-x-4 space-y-2 text-gray-500">
               <a
                 href="https://www.facebook.com/profile.php?id=61571117470897&mibextid=ZbWKwL"
                 target="_blank"
