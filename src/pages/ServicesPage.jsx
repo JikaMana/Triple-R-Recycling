@@ -230,10 +230,10 @@ export default function ServicesPage() {
                   height="315"
                   src="https://www.youtube.com/embed/uJ8TYNFEjN4?si=s2pwAZQ4nmaiqltH"
                   title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; "
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                   className="w-full h-full"
                 ></iframe>
               </div>
@@ -257,10 +257,10 @@ export default function ServicesPage() {
                   height="315"
                   src="https://www.youtube.com/embed/zzjd8lwWT44?si=wle3bQldCavHSWYO"
                   title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; "
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                   className="w-full h-full"
                 ></iframe>
               </div>
@@ -301,8 +301,11 @@ export default function ServicesPage() {
             Our Trusted Partners
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-8">
-            {partners.map((partner) => (
-              <div className=" bg-gray-100 rounded-2xl max-w-24 cursor-pointer">
+            {partners.map((partner, index) => (
+              <div
+                key={index}
+                className=" bg-gray-100 rounded-2xl max-w-24 cursor-pointer"
+              >
                 <img
                   key={partner.name}
                   src={`${partner.src}`}
