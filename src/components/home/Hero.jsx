@@ -11,7 +11,8 @@ const Hero = () => {
       style={{
         backgroundImage: `url(${heroImage})`,
       }}
-      className="h-[85vh] sm:h-screen bg-cover bg-no-repeat bg-center grid items-center "
+      className="h-[85vh] sm:h-screen bg-cover bg-no-repeat bg-center grid items-center"
+      loading="lazy"
     >
       <div className="max-w-[1280px]">
         <div className="text-white px-4 max-w-[49rem] xl:mx-auto">
@@ -48,7 +49,7 @@ const Hero = () => {
                 transition={{ duration: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <span className="text-green-400">
+                <span className="text-green-500">
                   <Typewriter
                     words={[
                       "Greener",

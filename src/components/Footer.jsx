@@ -26,7 +26,7 @@ const Footer = () => {
                 <img
                   src="/tripleR.svg"
                   alt="Wecyclers Logo"
-                  className="w-full h-full rounded-2xl p-2 hover:scale-125 transition-all duration-300"
+                  className="w-full h-full rounded-2xl p-2"
                 />
               </div>
             </div>
@@ -126,7 +126,7 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="flex gap-x-2">
+              <div className="flex gap-x-2 cursor-pointer">
                 <h3 className="text-xl font-semibold mb-1">Mail Directly</h3>
                 <Link to="mailto:triplerrecycling7@gmail.com">
                   <Mail />

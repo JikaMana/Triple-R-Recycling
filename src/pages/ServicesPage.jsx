@@ -157,7 +157,10 @@ export default function ServicesPage() {
         <section className="bg-green-800 py-12">
           <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
             {stats.map(({ label, value }) => (
-              <div key={label} className="p-6 bg-gray-100 rounded-lg shadow">
+              <div
+                key={label}
+                className="p-6 mx-4 bg-gray-100 rounded-lg shadow"
+              >
                 <div className="text-3xl font-extrabold text-green-700 mb-2">
                   {value}
                 </div>
