@@ -1,13 +1,12 @@
 import { ChevronRight } from "lucide-react";
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import InAction1 from "../assets/images/service/TripleR-inAction2.jpeg";
-import InAction2 from "../assets/images/service/TripleR-inAction3.jpeg";
-import InAction3 from "../assets/images/service/TripleR-inAction4.jpeg";
-import InAction4 from "../assets/images/service/TripleR-inAction5.jpeg";
-import InAction5 from "../assets/images/service/TripleR-inAction6.webm";
-import InAction6 from "../assets/images/service/TripleR-inAction7.webm";
-import weCyclers from "../assets/images/about/tripleR-wecyclers.png";
+import InAction1 from "../assets/images/service/TripleR-inAction2.webp";
+import InAction2 from "../assets/images/service/TripleR-inAction3.webp";
+import InAction3 from "../assets/images/service/TripleR-inAction4.webp";
+import InAction4 from "../assets/images/service/TripleR-inAction5.webp";
+import InAction6 from "../assets/images/service/TripleR-inAction7.mp4";
+import weCyclers from "../assets/images/about/tripleR-wecyclers.webp";
 import sajumahTableWater from "../assets/images/about/tripleR-sajumahTW.webp";
 
 const steps = [
@@ -95,7 +94,10 @@ export default function ServicesPage() {
     { type: "img", src: InAction2 },
     { type: "img", src: InAction3 },
     { type: "img", src: InAction4 },
-    { type: "video", src: InAction5 },
+    {
+      type: "you-video",
+      src: "https://youtu.be/zzjd8lwWT44?si=5XNRrDYLrZ9SMmcg",
+    },
     { type: "video", src: InAction6 },
   ];
   const partners = [
@@ -186,7 +188,7 @@ export default function ServicesPage() {
             {inActionMedia.map((media, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition w-full max-w-sm"
+                className="overflow-hidden rounded-xl w-full max-w-sm"
               >
                 {media.type === "img" ? (
                   <img
@@ -194,8 +196,9 @@ export default function ServicesPage() {
                     alt={`Triple R Action ${index + 1}`}
                     className="w-full h-48 object-cover"
                   />
-                ) : (
+                ) : media.type === "video" ? (
                   <video
+                    src={media.src}
                     className="w-full h-48 object-cover "
                     autoPlay
                     loop
@@ -204,9 +207,16 @@ export default function ServicesPage() {
                     loading="lazy"
                     preload="none"
                     poster="/tripleR-work-video-thumbnail.jpg"
-                  >
-                    <source src={media.src} type="video/mp4" />
-                  </video>
+                  ></video>
+                ) : (
+                  <iframe
+                    className="w-full h-48"
+                    src="https://www.youtube.com/embed/zzjd8lwWT44?autoplay=1&mute=1&loop=1&playlist=zzjd8lwWT44"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="autoplay; encrypted-media"
+                    allowFullScreen
+                  ></iframe>
                 )}
               </div>
             ))}
@@ -215,20 +225,12 @@ export default function ServicesPage() {
         {/* Video Tour */}
         <section className="max-w-3xl mx-auto text-center space-y-4">
           <h2 className="text-3xl font-bold text-gray-800">Facility Tour</h2>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 mx-4">
             <div className="">
               <p className="text-gray-600">
                 Inside Triple R Recyling: Daily Operations and Impact in Action
               </p>
               <div className="aspect-video rounded-xl overflow-hidden shadow-lg ">
-                {/* <iframe
-                  src="https://youtu.be/uJ8TYNFEjN4?si=KTxYxHtxyYvYiU1n"
-                  title="Triple R Facility Tour"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                /> */}
                 <iframe
                   width="560"
                   height="315"
@@ -248,14 +250,6 @@ export default function ServicesPage() {
                 to pelletizing.
               </p>
               <div className="aspect-video rounded-xl overflow-hidden shadow-lg">
-                {/* <iframe
-                  src="https://youtu.be/zzjd8IwWT44?si=%XNRrDYLrZ9SMmcg"
-                  title="Triple R Facility Tour"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                /> */}
                 <iframe
                   width="560"
                   height="315"

@@ -11,14 +11,14 @@ import {
   Sofa,
   Book,
 } from "lucide-react";
-import PetBottle from "../../assets/images/home/tripleR_pet_containers.png";
-import Nylon from "../../assets/images/home/tripleR-nylon.jpeg";
-import AluminiumCan from "../../assets/images/home/tripleR-aluminium-can.jpeg";
-import PlasticFurniture from "../../assets/images/home/tripleR-plastic-furniture.jpeg";
-import SachetWater from "../../assets/images/home/tripleR-sachet-water.jpeg";
-import PlasticContainer from "../../assets/images/home/tripleR-plastic-container.jpeg";
-import PlasticBucket from "../../assets/images/home/tripleR_plastic_bucket.png";
-import PlasticBowl from "../../assets/images/home/tripleR_plastic_bowl.png";
+import PetBottle from "../../assets/images/home/tripleR_pet_containers.webp";
+import Nylon from "../../assets/images/home/tripleR-nylon.webp";
+import AluminiumCan from "../../assets/images/home/tripleR-aluminium-can.webp";
+import PlasticFurniture from "../../assets/images/home/tripleR-plastic-furniture.webp";
+import SachetWater from "../../assets/images/home/tripleR-sachet-water.webp";
+import PlasticContainer from "../../assets/images/home/tripleR-plastic-container.webp";
+import PlasticBucket from "../../assets/images/home/tripleR_plastic_bucket.webp";
+import PlasticBowl from "../../assets/images/home/tripleR_plastic_bowl.webp";
 
 export default function Collectibles() {
   const items = [

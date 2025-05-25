@@ -1,7 +1,7 @@
 import React from "react";
 import greenCommunityImage from "../../assets/images/about/greenCommunity.webp";
 import { Link } from "react-router-dom";
-import weCyclers from "../../assets/images/about/tripleR-wecyclers.png";
+import weCyclers from "../../assets/images/about/tripleR-wecyclers.webp";
 import sajumahTableWater from "../../assets/images/about/tripleR-sajumahTW.webp";
 
 const Partners = () => {

@@ -1,7 +1,7 @@
 import React from "react";
 import "../../App.css";
 import { motion } from "framer-motion";
-import standOut from "../../assets/images/home/tripleR-stand-out-background.jpg";
+import standOut from "../../assets/images/home/tripleR-stand-out-background.webp";
 import { Gift, Users, Cpu, Sparkles, BookOpenCheck } from "lucide-react";
 
 const StandOut = () => {

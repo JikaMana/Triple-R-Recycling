@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import whoWeAre from "../../assets/images/home/tripleR-whoWeAre.jpeg";
+import whoWeAre from "../../assets/images/home/tripleR-whoWeAre.webp";
 import TripleRSection from "../../components/home/TripleRSection";
 
 const OurProcess = () => {

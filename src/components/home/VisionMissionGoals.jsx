@@ -1,7 +1,7 @@
 import { ShieldCheck, Target, Globe, ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import GreenTruck from "../../assets/images/home/tripleR-green-truck.png";
+import GreenTruck from "../../assets/images/home/tripleR-green-truck.webp";
 
 const points = [
   {

@@ -1,11 +1,11 @@
 import React from "react";
-import Workers1 from "../../assets/images/about/tripleR-workers1.jpeg";
+import Workers1 from "../../assets/images/about/tripleR-workers1.webp";
 
-import Workers2 from "../../assets/images/about/tripleR-workers2.jpeg";
-import Workers3 from "../../assets/images/about/tripleR-workers3.jpeg";
-import Workers4 from "../../assets/images/about/tripleR-workers4.jpeg";
-import Workers5 from "../../assets/images/about/tripleR-workers5.jpeg";
-import WorkersInAction from "../../assets/images/about/WorkersInAction.jpeg";
+import Workers2 from "../../assets/images/about/tripleR-workers2.webp";
+import Workers3 from "../../assets/images/about/tripleR-workers3.webp";
+import Workers4 from "../../assets/images/about/tripleR-workers4.webp";
+import Workers5 from "../../assets/images/about/tripleR-workers5.webp";
+import WorkersInAction from "../../assets/images/about/WorkersInAction.webp";
 
 const OurGallery = () => {
   return (
