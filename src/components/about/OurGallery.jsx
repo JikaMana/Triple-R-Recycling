@@ -73,16 +73,6 @@ const OurGallery = () => {
             className="w-full h-full object-cover rounded-xl"
           />
         </div>{" "}
-        {/* <div className="aspect-[4/4]">
-          <video
-            src={WorkersInActionVdeo}
-            muted
-            autoPlay
-            loop
-            playsInline
-            className="w-full h-full object-cover rounded-xl"
-          />
-        </div> */}
       </div>
     </div>
   );

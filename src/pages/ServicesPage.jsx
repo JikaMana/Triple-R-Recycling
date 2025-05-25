@@ -5,8 +5,8 @@ import InAction1 from "../assets/images/service/TripleR-inAction2.jpeg";
 import InAction2 from "../assets/images/service/TripleR-inAction3.jpeg";
 import InAction3 from "../assets/images/service/TripleR-inAction4.jpeg";
 import InAction4 from "../assets/images/service/TripleR-inAction5.jpeg";
-import InAction5 from "../assets/images/service/TripleR-inAction7.mp4";
-import InAction6 from "../assets/images/about/WorkersInActionVideo.mp4";
+import InAction5 from "../assets/images/service/TripleR-inAction6.webm";
+import InAction6 from "../assets/images/service/TripleR-inAction7.webm";
 import weCyclers from "../assets/images/about/tripleR-wecyclers.png";
 import sajumahTableWater from "../assets/images/about/tripleR-sajumahTW.webp";
 
