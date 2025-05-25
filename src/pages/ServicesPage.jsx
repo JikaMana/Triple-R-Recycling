@@ -196,13 +196,17 @@ export default function ServicesPage() {
                   />
                 ) : (
                   <video
-                    src={media.src}
                     className="w-full h-48 object-cover "
                     autoPlay
                     loop
                     muted
                     playsInline
-                  />
+                    loading="lazy"
+                    preload="none"
+                    poster="/tripleR-work-video-thumbnail.jpg"
+                  >
+                    <source src={media.src} type="video/mp4" />
+                  </video>
                 )}
               </div>
             ))}
