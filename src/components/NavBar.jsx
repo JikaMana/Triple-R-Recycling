@@ -9,7 +9,7 @@ const NavBar = () => {
   const iconStrokeWidth = 1.5;
   const iconClasses = "p-2 bg-gray-100 rounded-full";
   const linkClasses =
-    "flex items-center gap-x-2 bg-gray-200 hover:bg-gray-300 pl-1 pr-3 py-1 text-sm rounded-full text-gray-700 font-medium transition-colors duration-150";
+    "flex items-center gap-x-2 bg-white/30 hover:bg-gray-300 text-sm text-gray-50 pl-1 pr-3 py-1 text-sm rounded-full text-gray-700 font-medium transition-colors duration-150";
   const mobileLinkClasses =
     "flex items-center gap-2 px-4 py-2 rounded-md font-medium text-sm transition";
 
@@ -54,7 +54,7 @@ const NavBar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `${linkClasses} ${isActive ? "bg-green-800 text-gray-100" : ""}`
+                `${linkClasses} ${isActive ? "bg-gray-300 " : ""}`
               }
             >
               <Home
@@ -69,7 +69,7 @@ const NavBar = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `${linkClasses} ${isActive ? "bg-green-800 text-gray-100" : ""}`
+                `${linkClasses} ${isActive ? "bg-gray-300 " : ""}`
               }
             >
               <User
@@ -84,7 +84,7 @@ const NavBar = () => {
             <NavLink
               to="/service"
               className={({ isActive }) =>
-                `${linkClasses} ${isActive ? "bg-green-800 text-gray-100" : ""}`
+                `${linkClasses} ${isActive ? "bg-gray-300 " : ""}`
               }
             >
               <Cog
@@ -99,7 +99,7 @@ const NavBar = () => {
             <NavLink
               to="/blog"
               className={({ isActive }) =>
-                `${linkClasses} ${isActive ? "bg-green-800 text-gray-100" : ""}`
+                `${linkClasses} ${isActive ? "bg-gray-300 " : ""}`
               }
             >
               <PenLine

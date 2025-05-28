@@ -90,7 +90,7 @@ const Footer = () => {
                     <Instagram size={28} />
                   </Link>
                   <Link
-                    to="https://x.com/"
+                    to="https://x.com/@TripleRRLtd"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Twitter (X)"
@@ -138,15 +138,6 @@ const Footer = () => {
         <hr className="my-6 border-gray-700" />
         <div className="text-gray-200 text-sm text-center">
           © {new Date().getFullYear()} TRIPLE R LIMITED. All rights reserved.
-          <div className="text-gray-400 text-xs">
-            Built by{" "}
-            <Link
-              to="mailto:yahayaabdullahimana@gmail.com"
-              className="underline transition"
-            >
-              Yahaya Abdullahi Mana
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
