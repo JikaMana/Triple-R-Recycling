@@ -28,7 +28,7 @@ const Hero = () => {
 
             <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 md:mb-6">
               <motion.div
-                initial={{ opacity: 0, x: 600 }}
+                initial={{ opacity: 0, x: 500 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -44,7 +44,7 @@ const Hero = () => {
                 <span>Free Disposal. A Cleaner, </span>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, x: 600 }}
+                initial={{ opacity: 0, x: 500 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
