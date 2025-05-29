@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import { Home, PenLine, ArrowUpRight, Cog, User, Menu } from "lucide-react";
+import { Home, PenLine, ArrowUpRight, Cog, User, Menu, X } from "lucide-react";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

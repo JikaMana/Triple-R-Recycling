@@ -131,15 +131,15 @@ export default function ServicesPage() {
         </section>
         {/* How It Works Section */}
         <section className="max-w-7xl mx-auto px-4 py-8">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+          <h2 className="relative pt-4 text-4xl font-bold text-center text-gray-800 mb-8">
             How It Works
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
             {steps.map(({ number, title, description }) => (
               <div
                 key={number}
-                className="bg-gray-50 shadow-md rounded-2xl p-8 transition-transform transform hover:-translate-y-2 hover:shadow-xl"
+                className="bg-gray-50 shadow-md rounded-2xl p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl"
               >
                 <div className="w-14 h-14 mb-4 flex items-center justify-center bg-green-100 text-green-700 text-xl font-bold rounded-full">
                   {number}
