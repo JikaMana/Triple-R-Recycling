@@ -6,6 +6,32 @@ const ContactPage = () => {
   const inputClasses =
     "w-full rounded-md border border-gray-300 shadow-sm p-3 focus:ring-green-600 focus:border-green-600";
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        window.location.href = form.querySelector('[name="_next"]').value;
+      } else {
+        alert("Failed to submit form. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("An error occurred. Please try again.");
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -35,10 +61,7 @@ const ContactPage = () => {
           <div className="flex flex-col lg:flex-row border-2 border-green-800 rounded-xl overflow-hidden shadow-md">
             {/* Contact Form */}
             <form
-              // action="https://formsubmit.co/el/xuvime"
-              onSubmit={(e) => {
-                e.preventDefault();
-              }}
+              onSubmit={handleSubmit}
               action="https://formsubmit.co/el/mutabi"
               method="POST"
               className="w-full lg:w-1/2 p-6 sm:p-10 space-y-6 border-b-2 lg:border-b-0 lg:border-r-2"
@@ -96,7 +119,7 @@ const ContactPage = () => {
 
               <button
                 type="submit"
-                className="w-full bg-green-900 text-white font-medium py-3 rounded-md hover:bg-green-800 transition-all"
+                className="w-full bg-green-900 text-white font-medium py-3 cursor-pointer rounded-md hover:bg-green-800 transition-all"
               >
                 Send Message
               </button>
