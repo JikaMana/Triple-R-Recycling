@@ -1,25 +1,6 @@
-import { useState } from "react";
+import React from "react";
 
-export default function PickupForm() {
-  const [form, setForm] = useState({
-    fullName: "",
-    phone: "",
-    address: "",
-    date: "",
-    time: "",
-    notes: "",
-  });
-
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Pickup scheduled successfully (FCT only)!");
-    // Here you would typically send `form` to your backend
-  };
-
+const PickupForm = () => {
   return (
     <div className="max-w-2xl mx-auto mt-10">
       <h2 className="text-2xl lg:text-3xl font-bold text-green-700 mb-4">
@@ -33,59 +14,67 @@ export default function PickupForm() {
         only.
       </p>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form
+        // action="https://formsubmit.co/el/xuvime" //triple own
+        action="https://formsubmit.co/el/mutabi"
+        method="POST"
+        className="space-y-4"
+      >
+        <input
+          type="hidden"
+          name="_next"
+          value="http://localhost:5173/success?type=pickup"
+        />
+        <input type="hidden" name="_subject" value="New Pickup Request" />
+        <input type="hidden" name="_captcha" value="false" />
+
         <input
           type="text"
-          name="fullName"
+          name="Full Name"
           placeholder="Full Name"
           className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-          value={form.fullName}
-          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="Email"
+          placeholder="Email Address"
+          className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
           required
         />
         <input
           type="tel"
-          name="phone"
+          name="Phone Number"
           placeholder="Phone Number"
           className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-          value={form.phone}
-          onChange={handleChange}
           required
         />
         <textarea
-          name="address"
+          name="Address"
           placeholder="Pickup Address (FCT only)"
           rows={3}
           className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-          value={form.address}
-          onChange={handleChange}
           required
         />
         <div className="flex space-x-4">
           <input
             type="date"
-            name="date"
+            name="Date"
             className="w-1/2 border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-            value={form.date}
-            onChange={handleChange}
             required
           />
           <input
             type="time"
-            name="time"
+            name="Time"
             className="w-1/2 border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-            value={form.time}
-            onChange={handleChange}
             required
           />
         </div>
         <textarea
-          name="notes"
-          placeholder="Additional Notes (Optional)"
+          name="Extra Notes"
+          placeholder="Additional Notes (e.g Explain Address better or anything)"
           rows={2}
           className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-          value={form.notes}
-          onChange={handleChange}
         />
 
         <button
@@ -97,4 +86,6 @@ export default function PickupForm() {
       </form>
     </div>
   );
-}
+};
+
+export default PickupForm;

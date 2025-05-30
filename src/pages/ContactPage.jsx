@@ -25,6 +25,7 @@ const ContactPage = () => {
         />
         <meta property="og:type" content="website" />
       </Helmet>
+
       <div className="max-w-[1280px] mx-auto p-6 sm:p-10">
         <div className="mt-24">
           <h2 className="text-2xl sm:text-3xl font-bold mb-10 text-center text-green-900">
@@ -34,17 +35,31 @@ const ContactPage = () => {
           <div className="flex flex-col lg:flex-row border-2 border-green-800 rounded-xl overflow-hidden shadow-md">
             {/* Contact Form */}
             <form
-              action="#"
+              // action="https://formsubmit.co/el/xuvime"
+              action="https://formsubmit.co/el/mutabi"
+              method="POST"
               className="w-full lg:w-1/2 p-6 sm:p-10 space-y-6 border-b-2 lg:border-b-0 lg:border-r-2"
             >
+              <input
+                type="hidden"
+                name="_next"
+                value="http://localhost:5173/success?type=contact"
+              />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Feedback/Question/Complaint"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+
               <div>
                 <label htmlFor="name" className={labelClasses}>
                   Your Name
                 </label>
                 <input
                   type="text"
-                  id="name"
-                  placeholder="John Doe"
+                  name="name"
+                  placeholder="Enter your name"
                   className={inputClasses}
                   required
                 />
@@ -56,7 +71,7 @@ const ContactPage = () => {
                 </label>
                 <input
                   type="email"
-                  id="email"
+                  name="email"
                   placeholder="example@email.com"
                   className={inputClasses}
                   required
@@ -65,12 +80,12 @@ const ContactPage = () => {
 
               <div>
                 <label htmlFor="message" className={labelClasses}>
-                  Your Question
+                  Your Message
                 </label>
                 <textarea
-                  id="message"
                   rows="5"
-                  placeholder="Type your question here..."
+                  name="message"
+                  placeholder="Type your question, complaint or feedback here..."
                   className={inputClasses}
                   required
                 ></textarea>

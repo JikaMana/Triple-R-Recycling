@@ -11,6 +11,7 @@ import { HelmetProvider } from "react-helmet-async";
 import ScrollToTop from "./components/ScrollToTop";
 import BlogDetail from "./pages/BlogDetails";
 import NotFound from "./pages/NotFound";
+import FormSuccessPage from "./pages/FormSuccessPage";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
           </Route>
 
+          <Route path="/success" element={<FormSuccessPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
