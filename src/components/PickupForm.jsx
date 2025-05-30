@@ -25,8 +25,7 @@ export default function PickupForm() {
 
       if (response.ok) {
         // Redirect manually
-        window.location.href =
-          "https://triplerrecyclingltd.netlify.app/success?type=pickup";
+
         console.log(data);
       } else {
         alert("Something went wrong. Please try again.");
@@ -50,9 +49,14 @@ export default function PickupForm() {
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-4">
+        <input
+          type="hidden"
+          name="_next"
+          value="https://triplerrecyclingltd.netlify.app/success?type=pickup"
+        />
+
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_template" value="table" />
-
         <input
           type="text"
           name="Name"
@@ -101,7 +105,6 @@ export default function PickupForm() {
           rows={2}
           className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
         />
-
         <button
           type="submit"
           className="w-full bg-green-600 hover:bg-green-700 text-white py-3 rounded-md font-semibold transition"
