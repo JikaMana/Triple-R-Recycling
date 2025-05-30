@@ -4,10 +4,15 @@ export default function PickupForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = async (e) => {
-    e.preventDefault(); // Prevent page reload
+    e.preventDefault();
 
     const form = e.target;
     const data = new FormData(form);
+
+    // Log FormData contents
+    for (let [key, value] of data.entries()) {
+      console.log(`${key}: ${value}`);
+    }
 
     try {
       const response = await fetch(
@@ -18,25 +23,18 @@ export default function PickupForm() {
         }
       );
 
-      // Log FormData contents
-      // for (let [key, value] of data.entries()) {
-      //   console.log(`${key}: ${value}`);
-      // }
-
       if (response.ok) {
+        // Success
         setIsSubmitted(true);
-
-        // Redirect manually
-        window.location.href =
-          "https://triplerrecyclingltd.netlify.app/success?type=pickup";
+        // window.location.href =
+        //   "https://triplerrecyclingltd.netlify.app/success?type=pickup";
       } else {
-        console.log("Something went wrong. Please try again.");
+        alert("Something went wrong. Please try again.");
       }
     } catch (error) {
-      console.log("Error submitting form: " + error.message);
+      alert("Error submitting form: " + error.message);
     }
   };
-
   return (
     <div>
       <h2 className="text-2xl lg:text-3xl font-bold text-green-700 mb-4">
