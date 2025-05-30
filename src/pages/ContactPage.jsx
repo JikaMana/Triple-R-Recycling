@@ -11,9 +11,9 @@ const ContactPage = () => {
     const data = new FormData(form);
 
     // Log FormData contents
-    // for (let [key, value] of data.entries()) {
-    //   console.log(`${key}: ${value}`);
-    // }
+    for (let [key, value] of data.entries()) {
+      console.log(`${key}: ${value}`);
+    }
 
     try {
       const response = await fetch(
@@ -27,8 +27,8 @@ const ContactPage = () => {
       if (response.ok) {
         // Success
         setIsSubmitted(true);
-        window.location.href =
-          "https://triplerrecyclingltd.netlify.app/success?type=contact";
+        // window.location.href =
+        //   "https://triplerrecyclingltd.netlify.app/success?type=contact";
       } else {
         alert("Something went wrong. Please try again.");
       }
