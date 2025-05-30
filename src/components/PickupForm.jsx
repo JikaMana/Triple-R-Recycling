@@ -19,21 +19,21 @@ export default function PickupForm() {
       );
 
       // Log FormData contents
-      for (let [key, value] of data.entries()) {
-        console.log(`${key}: ${value}`);
-      }
+      // for (let [key, value] of data.entries()) {
+      //   console.log(`${key}: ${value}`);
+      // }
 
       if (response.ok) {
         setIsSubmitted(true);
 
         // Redirect manually
-        // window.location.href =
-        //   "https://triplerrecyclingltd.netlify.app/success?type=contact";
+        window.location.href =
+          "https://triplerrecyclingltd.netlify.app/success?type=contact";
       } else {
-        alert("Something went wrong. Please try again.");
+        console.log("Something went wrong. Please try again.");
       }
     } catch (error) {
-      alert("Error submitting form: " + error.message);
+      console.log("Error submitting form: " + error.message);
     }
   };
 
