@@ -16,7 +16,7 @@ export default function PickupForm() {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/jikamana2000@gmail.com",
+        "https://formsubmit.co/triplerrecycling7@gmail.com",
         {
           method: "POST",
           body: data,
