@@ -43,7 +43,7 @@ const ContactPage = () => {
               <input
                 type="hidden"
                 name="_next"
-                value="https://triplerrecyclingltd.netlify.app/?type=contact"
+                value="https://triplerrecyclingltd.netlify.app/success?type=contact"
               />
               <input
                 type="hidden"
