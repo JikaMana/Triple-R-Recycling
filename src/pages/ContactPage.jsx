@@ -36,6 +36,9 @@ const ContactPage = () => {
             {/* Contact Form */}
             <form
               // action="https://formsubmit.co/el/xuvime"
+              onSubmit={(e) => {
+                e.preventDefault();
+              }}
               action="https://formsubmit.co/el/mutabi"
               method="POST"
               className="w-full lg:w-1/2 p-6 sm:p-10 space-y-6 border-b-2 lg:border-b-0 lg:border-r-2"
