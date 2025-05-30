@@ -30,10 +30,10 @@ const ContactPage = () => {
         // window.location.href =
         //   "https://triplerrecyclingltd.netlify.app/success?type=contact";
       } else {
-        alert("Something went wrong. Please try again.");
+        console.log("Something went wrong. Please try again.");
       }
     } catch (error) {
-      alert("Error submitting form: " + error.message);
+      console.log("Error submitting form: " + error.message);
     }
   };
   return (

@@ -29,15 +29,15 @@ export default function PickupForm() {
         // window.location.href =
         //   "https://triplerrecyclingltd.netlify.app/success?type=pickup";
       } else {
-        alert("Something went wrong. Please try again.");
+        console.log("Something went wrong. Please try again.");
       }
     } catch (error) {
-      alert("Error submitting form: " + error.message);
+      console.log("Error submitting form: " + error.message);
     }
   };
   return (
     <div>
-      <h2 className="text-2xl lg:text-3xl font-bold text-green-700 mb-4">
+      <h2 className="text-2xl lg:text-3xl font-bold text-green-700 my-4">
         Schedule a Pickup
       </h2>
       <p className="text-sm md:text-lg text-gray-500 mb-6">
