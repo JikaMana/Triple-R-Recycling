@@ -24,9 +24,11 @@ export default function PickupForm() {
       }
 
       if (response.ok) {
-        // Redirect manually
+        setIsSubmitted(true);
 
-        console.log(data);
+        // Redirect manually
+        // window.location.href =
+        //   "https://triplerrecyclingltd.netlify.app/success?type=contact";
       } else {
         alert("Something went wrong. Please try again.");
       }

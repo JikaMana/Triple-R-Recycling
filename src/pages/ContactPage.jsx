@@ -27,8 +27,8 @@ const ContactPage = () => {
       if (response.ok) {
         // Success
         setIsSubmitted(true);
-        window.location.href =
-          "https://triplerrecyclingltd.netlify.app/success?type=contact";
+        // window.location.href =
+        //   "https://triplerrecyclingltd.netlify.app/success?type=contact";
       } else {
         alert("Something went wrong. Please try again.");
       }
