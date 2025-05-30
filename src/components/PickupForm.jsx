@@ -28,7 +28,7 @@ export default function PickupForm() {
 
         // Redirect manually
         window.location.href =
-          "https://triplerrecyclingltd.netlify.app/success?type=contact";
+          "https://triplerrecyclingltd.netlify.app/success?type=pickup";
       } else {
         console.log("Something went wrong. Please try again.");
       }
