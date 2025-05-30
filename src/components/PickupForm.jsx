@@ -8,7 +8,7 @@ const PickupForm = () => {
       </h2>
       <p className="text-sm md:text-lg text-gray-500 mb-6">
         Kindly note that pickups are currently available{" "}
-        <span className="font-medium text-green-700">
+        <span className="font-medium triplerrecyclingltdtext-green-700">
           within the FCT (Abuja)
         </span>{" "}
         only.
