@@ -23,7 +23,7 @@ const PickupForm = () => {
         <input
           type="hidden"
           name="_next"
-          value="http://localhost:5173/success?type=pickup"
+          value="https://triplerrecyclingltd.netlify.app/success?type=pickup"
         />
         <input type="hidden" name="_subject" value="New Pickup Request" />
         <input type="hidden" name="_captcha" value="false" />
