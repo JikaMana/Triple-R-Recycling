@@ -1,32 +1,57 @@
-import React from "react";
+import { useState } from "react";
 
-const PickupForm = () => {
+export default function PickupForm() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent page reload
+
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(
+        "https://formsubmit.co/jikamana2000@gmail.com",
+        {
+          method: "POST",
+          body: data,
+        }
+      );
+
+      // Log FormData contents
+      for (let [key, value] of data.entries()) {
+        console.log(`${key}: ${value}`);
+      }
+
+      if (response.ok) {
+        // Redirect manually
+        window.location.href =
+          "https://triplerrecyclingltd.netlify.app/success?type=pickup";
+        console.log(data);
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      alert("Error submitting form: " + error.message);
+    }
+  };
+
   return (
-    <div className="max-w-2xl mx-auto mt-10">
+    <div>
       <h2 className="text-2xl lg:text-3xl font-bold text-green-700 mb-4">
         Schedule a Pickup
       </h2>
       <p className="text-sm md:text-lg text-gray-500 mb-6">
         Kindly note that pickups are currently available{" "}
-        <span className="font-medium triplerrecyclingltdtext-green-700">
+        <span className="font-medium text-green-700">
           within the FCT (Abuja)
         </span>{" "}
         only.
       </p>
 
-      <form
-        // action="https://formsubmit.co/el/xuvime" //triple own
-        action="https://formsubmit.co/el/mutabi"
-        method="POST"
-        className="space-y-4"
-      >
-        <input
-          type="hidden"
-          name="_next"
-          value="https://triplerrecyclingltd.netlify.app/success?type=pickup"
-        />
-        <input type="hidden" name="_subject" value="New Pickup Request" />
+      <form onSubmit={handleSubmit} className="space-y-4">
         <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
 
         <input
           type="text"
@@ -44,7 +69,7 @@ const PickupForm = () => {
         />
         <input
           type="tel"
-          name="Phone Number"
+          name="Number"
           placeholder="Phone Number"
           className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
           required
@@ -71,7 +96,7 @@ const PickupForm = () => {
           />
         </div>
         <textarea
-          name="Extra Notes"
+          name="Notes"
           placeholder="Additional Notes (e.g Explain Address better or anything)"
           rows={2}
           className="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-green-500"
@@ -86,6 +111,4 @@ const PickupForm = () => {
       </form>
     </div>
   );
-};
-
-export default PickupForm;
+}
