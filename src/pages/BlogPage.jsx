@@ -13,7 +13,7 @@ const BlogPage = () => {
   return (
     <>
       <Helmet>
-        <title>All Blog Posts – Triple R</title>
+        <title>Blog Posts – Triple R</title>
         <meta
           name="description"
           content="Read the latest on plastic recycling, sustainability, and community impact from Triple R."
@@ -23,7 +23,7 @@ const BlogPage = () => {
       <main className="py-24 px-4 sm:px-8 lg:px-12 max-w-7xl mx-auto">
         <header className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-            All Blog Posts
+            Popular Blog Posts
           </h2>
         </header>
 

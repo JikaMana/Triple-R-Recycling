@@ -35,11 +35,11 @@ export default function BlogDetail() {
       </Helmet>
 
       <article className="prose prose-lg prose-green max-w-7xl mx-auto py-12 px-4 sm:px-8 lg:px-16">
-        <div className="overflow-hidden rounded-xl shadow-lg mt-12 mb-8">
+        <div className="max-h-[55vh] overflow-hidden rounded-xl shadow-lg mt-12 mb-8">
           <img
             src={blog.image}
             alt={blog.title}
-            className="w-full h-auto object-cover"
+            className="w-full h-auto object-cover object-center"
             loading="lazy"
           />
         </div>

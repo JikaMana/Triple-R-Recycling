@@ -1,14 +1,18 @@
+import TripleRBlogOneMain from "../assets/images/blog/TripleR-blogOneMain.jpeg";
+import TripleRBlogTwoMain from "../assets/images/blog/TripleR-blogTwoMain.png";
+import TripleRBlogThreeMain from "../assets/images/blog/TripleR-blogThreeMain.png";
+
 export const blogs = [
   {
-    image: "/triple-r-test-blog3.webp",
-    category: "AI",
+    image: TripleRBlogOneMain,
+    category: "Artificial Intelligence",
     title: "How AI and Robotics Are Revolutionizing Waste Sorting",
     author: "Triple R Team",
     date: "May 1, 2025",
     readTime: "3 min read",
   },
   {
-    image: "/triple-r-test-blog3.webp",
+    image: TripleRBlogTwoMain,
     category: "Blockchain Recycling",
     title: "Blockchain in Waste Tracking: Transparent, Efficient, and Scalable",
     author: "Triple R Team",
@@ -16,8 +20,8 @@ export const blogs = [
     readTime: "3 min read",
   },
   {
-    image: "/triple-r-test-blog3.webp",
-    category: "Recycling",
+    image: TripleRBlogThreeMain,
+    category: "Community Recycling",
     title: "Why Waste Literacy Is Key to Community Engagement",
     author: "Triple R Team",
     date: "May 1, 2025",
