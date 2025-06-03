@@ -31,7 +31,7 @@ const Founder = () => {
             <p className="text-lg text-gray-200">Chief Executive Officer</p>
             <div className="flex">
               <a
-                href="https://www.linkedin.com/in/abdullahi-suleiman-60851a203"
+                href="https://www.linkedin.com/in/abdullahi-suleiman-ezhin-60851a203"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -53,7 +53,7 @@ const Founder = () => {
         </div>
 
         <div className="flex gap-4 w-full h-max">
-          <p className="text-xl lg:text-2xl text-gray-900 leading-7 lg:leading-9">
+          <p className="text-lg md:text-xl lg:text-2xl text-gray-900 leading-7 lg:leading-9">
             As a young Nigerian passionate about environmental sustainability, I
             started Triple R Recycling after seeing the enormous plastic waste
             polluting our streets and waterways—especially in communities with

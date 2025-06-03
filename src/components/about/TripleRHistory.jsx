@@ -31,7 +31,7 @@ const TripleRHistory = () => {
         <h2 className="text-3xl md:text-3xl mb-4 font-bold text-gray-900 leading-tight">
           Our Story
         </h2>
-        <h3 className="text-xl md:text-2xl">
+        <h3 className="text-lg md:text-xl lg:text-2xl">
           Triple R Recycling Limited is a for-profit social enterprise based in
           Kuje, Abuja, Nigeria, established in 2024. The company focuses on
           collecting recyclables especially PET Bottles from households, public
