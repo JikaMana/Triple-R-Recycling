@@ -54,7 +54,7 @@ const NavBar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `${linkClasses} ${isActive ? "bg-gray-300 " : ""}`
+                `${linkClasses} ${isActive ? "bg-gray-300" : ""}`
               }
             >
               <Home
@@ -69,7 +69,7 @@ const NavBar = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `${linkClasses} ${isActive ? "bg-gray-300 " : ""}`
+                `${linkClasses} ${isActive ? "bg-gray-300" : ""}`
               }
             >
               <User
@@ -84,7 +84,7 @@ const NavBar = () => {
             <NavLink
               to="/service"
               className={({ isActive }) =>
-                `${linkClasses} ${isActive ? "bg-gray-300 " : ""}`
+                `${linkClasses} ${isActive ? "bg-gray-300" : ""}`
               }
             >
               <Cog
@@ -99,7 +99,7 @@ const NavBar = () => {
             <NavLink
               to="/blog"
               className={({ isActive }) =>
-                `${linkClasses} ${isActive ? "bg-gray-300 " : ""}`
+                `${linkClasses} ${isActive ? "bg-gray-300" : ""}`
               }
             >
               <PenLine

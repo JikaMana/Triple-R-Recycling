@@ -28,7 +28,7 @@ const OurProcess = () => {
               <h3 className="uppercase text-sm tracking-widest mb-2 text-green-600 font-semibold">
                 \ our process
               </h3>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold leading-tight mb-4 md:mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-bold leading-tight">
                 Efficient Plastic Recycling. Free Disposal.
               </h2>
             </div>

@@ -21,7 +21,7 @@ export const blogs = [
   },
   {
     image: TripleRBlogThreeMain,
-    category: "Community Recycling",
+    category: "Community Health",
     title: "Why Waste Literacy Is Key to Community Engagement",
     author: "Triple R Team",
     date: "May 1, 2025",

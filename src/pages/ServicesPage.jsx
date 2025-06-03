@@ -12,45 +12,33 @@ import sajumahTableWater from "../assets/images/about/tripleR-sajumahTW.webp";
 const steps = [
   {
     number: "01",
-    title: "Collection & Logistics",
+    title: "Plastic Waste Collection",
     description:
-      "We work with neighborhoods, schools, and businesses to schedule curbside pickups or drop‑off events. GPS‑tracked trucks optimize routes, ensuring timely and eco‑efficient transport to our facility.",
+      "We collect PET bottles and other recyclable plastics through community agents, designated drop-off points, and partnerships with schools, restaurants, and other organizations.",
   },
   {
     number: "02",
-    title: "Sorting & Separation",
+    title: "Reward System",
     description:
-      "Combining manual inspection with optical NIR scanners, we sort plastics into PET, HDPE, PP, and more, achieving >98% purity before washing. This maximizes downstream quality and value.",
+      "To encourage participation, we offer cash incentives or other benefits for each kilogram of plastic waste collected and delivered to our centers.",
   },
   {
     number: "03",
-    title: "Washing & Decontamination",
+    title: "Sorting",
     description:
-      "Multi‑stage friction washers, caustic baths, and rinse cycles strip labels, adhesives, and residues. A centrifuge dryer ensures moisture levels below 0.2% for optimal processing.",
+      "Plastics are sorted by type and color. Non-recyclable elements such as bottle caps and straps are removed to ensure material quality.",
   },
   {
     number: "04",
-    title: "Shredding & Granulation",
+    title: "Baling",
     description:
-      "Low‑noise industrial shredders convert flakes into consistent granules. Our granulation lines produce uniform particles (3–5 mm) ready for extrusion.",
+      "The sorted plastics are compressed using a baling machine into dense, manageable bales weighing at least 300 kg for efficient transport.",
   },
   {
     number: "05",
-    title: "Extrusion & Pelletizing",
+    title: "Transportation",
     description:
-      "Flakes are melted, filtered, and extruded into standard pellets. Our twin‑screw extruders handle up to 1 ton/hour, creating virgin‑grade pellets for packaging, textiles, and more.",
-  },
-  {
-    number: "06",
-    title: "Baling & Logistics",
-    description:
-      "Pellets and sorted flakes are baled into 1,200 lb press‑locked blocks, shrink‑wrapped, and palletized. We manage export logistics or supply local manufacturers directly.",
-  },
-  {
-    number: "07",
-    title: "Quality Assurance",
-    description:
-      "Every batch is tested for melt flow index, density, and contaminant levels. Certificates of analysis accompany shipments to guarantee performance.",
+      "Baled materials are loaded onto trucks and transported to designated recycling facilities for further processing.",
   },
 ];
 
