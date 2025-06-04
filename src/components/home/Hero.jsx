@@ -26,9 +26,9 @@ const Hero = () => {
               Reducing, Reusing, Recycling
             </h3>
 
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 md:mb-6">
+            <h2 className="hidden md:block text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 md:mb-6">
               <motion.div
-                initial={{ opacity: 0, x: 500 }}
+                initial={{ opacity: 0, x: 600 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true, amount: 0.3 }}
@@ -44,9 +44,53 @@ const Hero = () => {
                 <span>Free Disposal. A Cleaner, </span>
               </motion.div>
               <motion.div
-                initial={{ opacity: 0, x: 500 }}
+                initial={{ opacity: 0, x: 600 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
+                viewport={{ once: true, amount: 0.3 }}
+              >
+                <span className="text-green-500">
+                  <Typewriter
+                    words={[
+                      "Greener",
+                      "Smarter",
+                      "Sustainable",
+                      "Brighter",
+                      "Plastic-Free",
+                      "Eco-Friendly",
+                    ]}
+                    loop={0}
+                    cursor
+                    cursorStyle="|"
+                    typeSpeed={120}
+                    deleteSpeed={80}
+                    delaySpeed={2000}
+                  />
+                </span>{" "}
+                Tomorrow.{" "}
+              </motion.div>
+            </h2>
+            <h2 className="md:hidden text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 md:mb-6">
+              <motion.div
+                initial={{ opacity: 0, x: 300 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true, amount: 0.3 }}
+              >
+                Efficient Plastic Recycling. <br />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: -180 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true, amount: 0.3 }}
+              >
+                <span>Free Disposal. A Cleaner, </span>
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, x: 300 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ once: true, amount: 0.3 }}
               >
                 <span className="text-green-500">
@@ -73,7 +117,8 @@ const Hero = () => {
 
             <div className="flex flex-col min-[360px]:flex-row sm:items-center gap-4">
               <Link
-                to="https://youtu.be/Q9V7mSXIy20?si=az5-5urgdcISfxKv"
+                // to="https://youtu.be/Q9V7mSXIy20?si=az5-5urgdcISfxKv"
+                to="https://www.youtube.com/embed/uJ8TYNFEjN4?si=s2pwAZQ4nmaiqltH"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-max inline-flex items-center gap-2 px-5 md:px-7 py-3 text-white bg-green-800 hover:bg-green-600 font-semibold rounded-full shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-green-500"
