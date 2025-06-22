@@ -112,9 +112,8 @@ export default function ServicesPage() {
             Our End-to-End Recycling Services
           </h1>
           <p className="text-lg max-w-2xl mx-auto">
-            From curbside collection to high‑quality pellet production, our
-            fully integrated process transforms plastic waste into valuable
-            resources for a sustainable tomorrow.
+            From our fully integrated process transforms plastic waste into
+            valuable resources for a sustainable tomorrow.
           </p>
         </section>
         {/* How It Works Section */}
