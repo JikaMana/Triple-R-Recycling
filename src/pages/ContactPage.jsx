@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Helmet } from "react-helmet-async";
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const ContactPage = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -17,9 +17,9 @@ const ContactPage = () => {
 
     try {
       const response = await fetch(
-        "https://formsubmit.co/triplerrecycling7@gmail.com",
+        'https://formsubmit.co/triplerrecycling7@gmail.com',
         {
-          method: "POST",
+          method: 'POST',
           body: data,
         }
       );
@@ -30,10 +30,10 @@ const ContactPage = () => {
         // window.location.href =
         //   "https://triplerrecyclingltd.netlify.app/success?type=contact";
       } else {
-        console.log("Something went wrong. Please try again.");
+        console.log('Something went wrong. Please try again.');
       }
     } catch (error) {
-      console.log("Error submitting form: " + error.message);
+      console.log('Error submitting form: ' + error.message);
     }
   };
   return (
@@ -48,12 +48,18 @@ const ContactPage = () => {
           name="keywords"
           content="Triple R, contact, recycling, waste management, sustainability"
         />
-        <meta property="og:title" content="Contact Triple R Recycling" />
+        <meta
+          property="og:title"
+          content="Contact Triple R Recycling"
+        />
         <meta
           property="og:description"
           content="Connect with Triple R Recycling to support sustainability and eco-friendly solutions."
         />
-        <meta property="og:type" content="website" />
+        <meta
+          property="og:type"
+          content="website"
+        />
       </Helmet>
 
       <div className="max-w-[1280px] mx-auto p-6 sm:p-10">
@@ -68,20 +74,22 @@ const ContactPage = () => {
               // action="https://formsubmit.co/el/mutabi"
               // method="POST"
               onSubmit={handleSubmit}
-              className="w-full lg:w-1/2 p-6 sm:p-10 space-y-6 border-b-2 lg:border-b-0 lg:border-r-2"
-            >
+              className="w-full lg:w-1/2 p-6 sm:p-10 space-y-6 border-b-2 lg:border-b-0 lg:border-r-2">
               <input
                 type="hidden"
                 name="_next"
                 value="https://triplerrecyclingltd.netlify.app/success?type=contact"
               />
-              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_captcha"
+                value="false"
+              />
 
               <div>
                 <label
                   htmlFor="name"
-                  className="block font-medium text-green-900 mb-1"
-                >
+                  className="block font-medium text-green-900 mb-1">
                   Your Name
                 </label>
                 <input
@@ -96,8 +104,7 @@ const ContactPage = () => {
               <div>
                 <label
                   htmlFor="email"
-                  className="block font-medium text-green-900 mb-1"
-                >
+                  className="block font-medium text-green-900 mb-1">
                   Email Address
                 </label>
                 <input
@@ -112,8 +119,7 @@ const ContactPage = () => {
               <div>
                 <label
                   htmlFor="message"
-                  className="block font-medium text-green-900 mb-1"
-                >
+                  className="block font-medium text-green-900 mb-1">
                   Your Message
                 </label>
                 <textarea
@@ -121,14 +127,12 @@ const ContactPage = () => {
                   name="message"
                   placeholder="Type your question, complaint or feedback here..."
                   className="w-full rounded-md border border-gray-300 shadow-sm p-3 focus:ring-green-600 focus:border-green-600"
-                  required
-                ></textarea>
+                  required></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-green-900 text-white font-medium py-3 cursor-pointer rounded-md hover:bg-green-800 transition-all"
-              >
+                className="w-full bg-green-900 text-white font-medium py-3 cursor-pointer rounded-md hover:bg-green-800 transition-all">
                 Send Message
               </button>
             </form>
@@ -141,8 +145,7 @@ const ContactPage = () => {
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              ></iframe>
+                referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>

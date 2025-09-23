@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -6,4 +6,13 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* You would need to add this CSS to your stylesheet */
+.clarity-widget-container {
+  /* Set a specific position within the footer */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* Add other styling like margin, padding, etc. to place it exactly where you want */
 }

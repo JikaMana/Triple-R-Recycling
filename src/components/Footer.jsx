@@ -5,9 +5,10 @@ import {
   Mail,
   Twitter,
   Video,
-} from "lucide-react";
-import React from "react";
-import { Link } from "react-router-dom";
+} from 'lucide-react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import ClarityWidget from './ClarityWidget';
 
 const Footer = () => {
   return (
@@ -22,46 +23,55 @@ const Footer = () => {
                 plastic waste by rewarding individuals for recycling. Our
                 mission is to create a cleaner, greener future.
               </p>
-              <div className="rounded-2xl max-w-24 cursor-pointer">
+
+              <div className="flex justify-center mt-8">
+                {/* This is the spot where you want the widget to appear */}
+                <ClarityWidget />
+              </div>
+              {/* <div className="rounded-2xl max-w-24 cursor-pointer">
                 <img
                   src="/tripleR.svg"
                   alt="Wecyclers Logo"
                   className="w-full h-full rounded-2xl p-2"
                 />
-              </div>
+              </div> */}
             </div>
 
             <div>
               <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/" className="hover:text-green-800 transition">
+                  <Link
+                    to="/"
+                    className="hover:text-green-800 transition">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="hover:text-green-800 transition">
+                  <Link
+                    to="/about"
+                    className="hover:text-green-800 transition">
                     About Us
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/service"
-                    className="hover:text-green-800 transition"
-                  >
+                    className="hover:text-green-800 transition">
                     Services
                   </Link>
                 </li>
                 <li>
                   <Link
                     to="/contact"
-                    className="hover:text-green-800 transition"
-                  >
+                    className="hover:text-green-800 transition">
                     Contact
                   </Link>
                 </li>
                 <li>
-                  <Link to="/blog" className="hover:text-green-800 transition">
+                  <Link
+                    to="/blog"
+                    className="hover:text-green-800 transition">
                     Blog
                   </Link>
                 </li>
@@ -76,8 +86,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook"
-                    className="hover:text-green-800 transition"
-                  >
+                    className="hover:text-green-800 transition">
                     <Facebook size={28} />
                   </Link>
                   <Link
@@ -85,8 +94,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram"
-                    className="hover:text-green-800 transition"
-                  >
+                    className="hover:text-green-800 transition">
                     <Instagram size={28} />
                   </Link>
                   <Link
@@ -94,8 +102,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Twitter (X)"
-                    className="hover:text-green-800 transition"
-                  >
+                    className="hover:text-green-800 transition">
                     <Twitter size={28} />
                   </Link>
                   <Link
@@ -103,8 +110,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
-                    className="hover:text-green-800 transition"
-                  >
+                    className="hover:text-green-800 transition">
                     <Linkedin size={28} />
                   </Link>
 
@@ -113,14 +119,12 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="TikTok"
-                    className="hover:text-green-800 transition"
-                  >
+                    className="hover:text-green-800 transition">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="currentColor"
                       viewBox="0 0 24 24"
-                      className="w-7 h-7"
-                    >
+                      className="w-7 h-7">
                       <path d="M16.5 1.5h-3v13.25a2.75 2.75 0 1 1-2.75-2.75V8.5a6.5 6.5 0 1 0 6.5 6.5V8.129a7.285 7.285 0 0 0 3.75 1.121V6.25a4.75 4.75 0 0 1-4.75-4.75Z" />
                     </svg>
                   </Link>
