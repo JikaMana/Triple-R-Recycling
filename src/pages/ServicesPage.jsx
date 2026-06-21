@@ -43,7 +43,7 @@ const steps = [
 ];
 
 const stats = [
-  { label: "1000+ Bales Processed", value: "500+" },
+  { label: "Bales Processed", value: "5000+" },
   { label: "98% Purity Achieved", value: "98%" },
   { label: "300 kg per Bale", value: "300 kg" },
   { label: "Energy-efficient machinery usage", value: "80%" },
@@ -126,8 +126,7 @@ export default function ServicesPage() {
             {steps.map(({ number, title, description }) => (
               <div
                 key={number}
-                className="bg-gray-50 shadow-md rounded-2xl p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl"
-              >
+                className="bg-gray-50 shadow-md rounded-2xl p-6 transition-transform transform hover:-translate-y-2 hover:shadow-xl">
                 <div className="w-14 h-14 mb-4 flex items-center justify-center bg-green-100 text-green-700 text-xl font-bold rounded-full">
                   {number}
                 </div>
@@ -146,8 +145,7 @@ export default function ServicesPage() {
             {stats.map(({ label, value }) => (
               <div
                 key={label}
-                className="p-6 mx-4 bg-gray-100 rounded-lg shadow"
-              >
+                className="p-6 mx-4 bg-gray-100 rounded-lg shadow">
                 <div className="text-3xl font-extrabold text-green-700 mb-2">
                   {value}
                 </div>
@@ -178,8 +176,7 @@ export default function ServicesPage() {
             {inActionMedia.map((media, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-xl w-full max-w-sm"
-              >
+                className="overflow-hidden rounded-xl w-full max-w-sm">
                 {media.type === "img" ? (
                   <img
                     src={media.src}
@@ -196,8 +193,7 @@ export default function ServicesPage() {
                     playsInline
                     loading="lazy"
                     preload="none"
-                    poster="/tripleR-work-video-thumbnail.jpg"
-                  ></video>
+                    poster="/tripleR-work-video-thumbnail.jpg"></video>
                 ) : (
                   <iframe
                     className="w-full h-48"
@@ -205,8 +201,7 @@ export default function ServicesPage() {
                     title="YouTube video player"
                     frameBorder="0"
                     allow="autoplay; encrypted-media"
-                    allowFullScreen
-                  ></iframe>
+                    allowFullScreen></iframe>
                 )}
               </div>
             ))}
@@ -230,8 +225,7 @@ export default function ServicesPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; "
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
+                  className="w-full h-full"></iframe>
               </div>
             </div>
             <div className="">
@@ -249,8 +243,7 @@ export default function ServicesPage() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; "
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  className="w-full h-full"
-                ></iframe>
+                  className="w-full h-full"></iframe>
               </div>
             </div>
           </div>
@@ -265,15 +258,13 @@ export default function ServicesPage() {
               <article
                 key={index}
                 className="bg-white p-6 rounded-lg border border-gray-200 hover:border-green-500 transition-colors"
-                aria-labelledby={`faq-${index}`}
-              >
+                aria-labelledby={`faq-${index}`}>
                 <div className="flex items-start gap-3">
                   <ChevronRight className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
                   <div>
                     <h3
                       id={`faq-${index}`}
-                      className="text-lg font-semibold text-gray-900 mb-2"
-                    >
+                      className="text-lg font-semibold text-gray-900 mb-2">
                       {faq.q}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">{faq.a}</p>
@@ -292,8 +283,7 @@ export default function ServicesPage() {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className=" bg-gray-100 rounded-2xl max-w-24 cursor-pointer"
-              >
+                className=" bg-gray-100 rounded-2xl max-w-24 cursor-pointer">
                 <img
                   key={partner.name}
                   src={`${partner.src}`}
@@ -314,8 +304,7 @@ export default function ServicesPage() {
           </p>
           <a
             href="/contact"
-            className="inline-block bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
-          >
+            className="inline-block bg-white text-green-700 px-8 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
             Get Started
           </a>
         </section>

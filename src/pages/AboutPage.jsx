@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
-import aboutBannerImage from "../assets/images/about/aboutBanner.webp";
+import aboutBannerImage from "../assets/images/about/image.jpeg";
 import Founder from "../components/about/Founder";
 import Partners from "../components/about/Partners";
 import TripleRHistory from "../components/about/TripleRHistory";
@@ -39,8 +39,7 @@ const AboutPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
-                className={contactIconsClasses}
-              >
+                className={contactIconsClasses}>
                 <Facebook size={28} />
               </a>
               <a
@@ -48,8 +47,7 @@ const AboutPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className={contactIconsClasses}
-              >
+                className={contactIconsClasses}>
                 <Instagram size={28} />
               </a>
               <a
@@ -57,8 +55,7 @@ const AboutPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter (X)"
-                className={contactIconsClasses}
-              >
+                className={contactIconsClasses}>
                 <Twitter size={28} />
               </a>
               <a
@@ -66,8 +63,7 @@ const AboutPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className={contactIconsClasses}
-              >
+                className={contactIconsClasses}>
                 <Linkedin size={28} />
               </a>
 
@@ -76,14 +72,12 @@ const AboutPage = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="TikTok"
-                className={contactIconsClasses}
-              >
+                className={contactIconsClasses}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
                   viewBox="0 0 24 24"
-                  className="w-7 h-7"
-                >
+                  className="w-7 h-7">
                   <path d="M16.5 1.5h-3v13.25a2.75 2.75 0 1 1-2.75-2.75V8.5a6.5 6.5 0 1 0 6.5 6.5V8.129a7.285 7.285 0 0 0 3.75 1.121V6.25a4.75 4.75 0 0 1-4.75-4.75Z" />
                 </svg>
               </a>

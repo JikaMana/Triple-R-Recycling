@@ -67,15 +67,13 @@ export function FAQSection() {
           <article
             key={index}
             className="bg-white p-6 rounded-lg border border-gray-200 hover:border-green-500 transition-colors"
-            aria-labelledby={`faq-${index}`}
-          >
+            aria-labelledby={`faq-${index}`}>
             <div className="flex items-start gap-3">
               <ChevronRight className="w-5 h-5 text-green-600 mt-1 flex-shrink-0" />
               <div>
                 <h3
                   id={`faq-${index}`}
-                  className="text-lg font-semibold text-gray-900 mb-2"
-                >
+                  className="text-lg font-semibold text-gray-900 mb-2">
                   {faq.question}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
@@ -91,8 +89,7 @@ export function FAQSection() {
           <Link
             to="/contact"
             className="text-green-600 hover:text-green-800 font-medium transition-colors"
-            aria-label="Contact us for more questions"
-          >
+            aria-label="Contact us for more questions">
             Contact us directly
           </Link>
         </p>
