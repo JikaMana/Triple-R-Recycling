@@ -32,26 +32,15 @@ const TripleRHistory = () => {
           Our Story
         </h2>
         <h3 className="text-lg md:text-xl lg:text-2xl">
-          Triple R Recycling Limited is a for-profit social enterprise based in
-          Kuje, Abuja, Nigeria, established in 2024. The company focuses on
-          collecting recyclables especially PET Bottles from households, public
-          spaces, and the environment, aiming to drive positive social and
-          environmental impact. Our operations are strategically located in
-          low-income communities, helping to reduce diseases like malaria and
-          typhoid, which are prevalent in these areas. Through initiatives like
-          "trash for cash," we have been pivotal in creating jobs for vulnerable
-          groups, especially women and youth, while also reducing pollution and
-          erosion. In addition to our environmental efforts, Triple R Recycling
-          Limited has achieved significant milestones in recycling operations.
-          For instance, on March 24, 2025, they recorded their highest
-          single-day collection of PET plastic bottles since starting their
-          baling operations. This achievement underscores the growing efficiency
-          of our collection, sorting, and baling processes, reflecting increased
-          awareness and participation in recycling initiatives. Triple R
-          Recycling Limited is open to partnerships and collaborations to
-          further our mission of creating a cleaner and safer environment. We
-          continue to provide effective waste management solutions and promote a
-          circular economy in Nigeria.
+          Triple R Recycling Limited has achieved significant milestones in its
+          recycling operations. On March 24, 2025, the company recorded its
+          highest single-day collection of PET plastic bottles since commencing
+          operations. This achievement reflects the increasing efficiency of our
+          collection network, the growing participation of communities, and the
+          rising demand for responsible waste management solutions. It also
+          demonstrates our capacity to scale operations while advancing our
+          mission of reducing plastic pollution and promoting a circular
+          economy.
         </h3>
       </div>
     </div>
